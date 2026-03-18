@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background:linear-gradient(375deg,#1cc7d0,#2ede98) ;
+}
+.wrapper{
+    height: 400px;
+   width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper .card{
+ width: 100%;
+  height: 100%;
+   background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    padding:5px ;
+    transform-style: preserve-3d;
+    transition:0.3s cubic-bezier(0.4,0.2,0.2,1) ;
+
+}
+.wrapper:hover > .front-face{
+     transform: rotateY(90deg);
+}
+.wrapper .card img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.wrapper .backs-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(90deg);
+}
+.wrapper:hover > .backs-face{
+     transform: rotateY(0deg);
+}
+.wrapper .backs-face img{
+border-radius: 50%;
+height: 150px;
+width: 150px;
+padding: 5px;
+background:linear-gradient(375deg,#1cc7d0,#2ede98) ;
+
+}
+.wrapper .backs-face .info{
+    text-align: center;
+}
+.wrapper .backs-face .info .title{
+font-size: 30px;
+font-weight: 500;
+}
+.backs-face ul{
+    
+    display: flex;
+}
+.backs-face ul a{
+    display: block;
+    height: 40px;
+    align-items:center;
+    text-align: center;
+    width: 40px;
+    border: 2px solid transparent;
+    line-height: 38px;
+    margin:0 5px ;
+    border-radius: 50%;
+     background:linear-gradient(375deg,#1cc7d0,#2ede98) ;
+     color: #fff;
+     
+     
+}
+.backs-face ul a:hover{
+    background:none;
+    color:#1cc7d0;
+    border-color: #1cc7d0;
+}
