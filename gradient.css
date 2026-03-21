@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=karla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+
+    font-family: "poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: #000;
+}
+.text{
+    font-size: 150px;
+    font-weight: 800;
+    background-size: 400%;
+    text-transform: uppercase;
+    background:linear-gradient(135deg,#5335cf 25%,#f66e48 50%,#de005e 75%,#5335cf 100%);
+   -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation:animate 10s linear infinite;
+    
+}
+@keyframes animate {
+    100%{
+        background-position: 400%;
+    }
+}
