@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #130f40;
+    font-family: Arial;
+    user-select:none ;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 260px;
+    background-color: #ecf0f1;
+    border-radius: 20px;
+}
+.container .header{
+    position: absolute;
+    padding: 15px;
+    color: #2691d9;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Noto Sans JP',sans-serif;
+}
+.container .group{
+    padding: 45px 30px;
+}
+.group .item{
+    margin: 25px 0;
+    font-weight: 600;
+}
+.container .box-group{
+    position:absolute;
+    top:65px;
+    left: 200px;
+}
+.box-group .box2{
+    margin-top: 18px;
+}
+.container input[type="checkbox"]{
+    position: relative;
+    height: 18px;
+    width: 36px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+     box-shadow: 0 0px 5px rgba(0,0,0,0.2);
+    -webkit-appearance:none;
+    transition:0.5s ease ;
+}
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transform: scale(.85);
+    transition: .5s;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    background:linear-gradient(#fff,#f2f2f2,#e6e6e6,#d9d9d9);
+}
+input:checked[type="checkbox"]{
+    background-color: #387cfa;
+}
+input:checked[type="checkbox"]:before{
+    left: 18px;
+    ;
+
+}
